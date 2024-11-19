@@ -1,0 +1,7 @@
+.white-link {
+    color: #c0c0c0;
+
+    &:hover {
+        color: #a0a0a0;
+    }
+}

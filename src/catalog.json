@@ -1,0 +1,428 @@
+{
+  "groups": [
+    {
+      "name": "Browsers",
+      "id" : "browser"
+    },
+    {
+      "name": "Gaming",
+      "id": "gaming"
+    },
+    {
+      "name": "Music",
+      "id": "music"
+    },
+    {
+      "name": "Movies, Shows, and Video",
+      "id": "video"
+    },
+    {
+      "name": "Communication",
+      "id": "comm"
+    },
+    {
+      "name": "Productivity",
+      "id": "productivity"
+    },
+    {
+      "name": "Software Development",
+      "id": "dev",
+      "subgroups": [
+        {
+          "name": "Language Support",
+          "id": "dev-lang"
+        },
+        {
+          "name": "IDEs (excluding JetBrains)",
+          "id": "dev-ide"
+        },
+        {
+          "name": "JetBrains",
+          "id": "dev-ide-jb"
+        }
+      ]
+    }
+  ],
+  "apps": [
+    {
+      "name": "Google Chrome",
+      "id": "Google.Chrome",
+      "requiresAdmin": true,
+      "groups": ["browser"]
+    },
+    {
+      "name": "Firefox",
+      "id": "Mozilla.Firefox",
+      "requiresAdmin": true,
+      "groups": ["browser"]
+    },
+    {
+      "name": "Opera",
+      "id": "Opera.Opera",
+      "requiresAdmin": true,
+      "groups": ["browser"]
+    },
+    {
+      "name": "Opera GX",
+      "id": "Opera.OperaGX",
+      "requiresAdmin": true,
+      "groups": ["browser"]
+    },
+    {
+      "name": "Brave",
+      "id": "Brave.Brave",
+      "requiresAdmin": true,
+      "groups": ["browser"]
+    },
+    {
+      "name": "Steam",
+      "id": "Valve.Steam",
+      "requiresAdmin": true,
+      "groups": ["gaming"]
+    },
+    {
+      "name": "GOG Galaxy",
+      "id": "GOG.Galaxy",
+      "requiresAdmin": true,
+      "groups": ["gaming"]
+    },
+    {
+      "name": "Epic Games Launcher",
+      "id": "EpicGames.EpicGamesLauncher",
+      "requiresAdmin": true,
+      "groups": ["gaming"]
+    },
+    {
+      "name": "Minecraft Launcher",
+      "id": "Mojang.MinecraftLauncher",
+      "requiresAdmin": true,
+      "groups": ["gaming"]
+    },
+    {
+      "name": "Prism Launcher",
+      "id": "PrismLauncher.PrismLauncher",
+      "requiresAdmin": true,
+      "groups": ["gaming"],
+      "prerequisites": [
+        "EclipseAdoptium.Temurin.8.JDK",
+        "EclipseAdoptium.Temurin.17.JDK",
+        "EclipseAdoptium.Temurin.21.JDK"
+      ]
+    },
+    {
+      "name": "Spotify",
+      "id": "Spotify.Spotify",
+      "requiresAdmin": true,
+      "groups": ["music"]
+    },
+    {
+      "name": "Apple Music",
+      "id": "9PFHDD62MXS1",
+      "requiresAdmin": true,
+      "groups": ["music"]
+    },
+    {
+      "name": "Deezer",
+      "id": "Deezer.Deezer",
+      "requiresAdmin": true,
+      "groups": ["music"]
+    },
+    {
+      "name": "Amazon Music",
+      "id": "Amazon.Music",
+      "requiresAdmin": true,
+      "groups": ["music"]
+    },
+    {
+      "name": "Pandora",
+      "id": "9WZDNCRFJ46V",
+      "requiresAdmin": true,
+      "groups": ["music"]
+    },
+    {
+      "name": "Discord",
+      "id": "Discord.Discord",
+      "requiresAdmin": true,
+      "groups": ["gaming", "comm"]
+    },
+    {
+      "name": "Slack",
+      "id": "SlackTechnologies.Slack",
+      "requiresAdmin": true,
+      "groups": ["comm", "productivity"]
+    },
+    {
+      "name": "Zoom",
+      "id": "Zoom.Zoom",
+      "requiresAdmin": true,
+      "groups": ["comm", "productivity"]
+    },
+    {
+      "name": "Libre Office",
+      "id": "TheDocumentFoundation.LibreOffice",
+      "requiresAdmin": true,
+      "groups": ["productivity"]
+    },
+    {
+      "name": "OneDrive",
+      "id": "Microsoft.OneDrive",
+      "requiresAdmin": true,
+      "groups": ["productivity"]
+    },
+    {
+      "name": "Google Drive",
+      "id": "Google.GoogleDrive",
+      "requiresAdmin": true,
+      "groups": ["productivity"]
+    },
+    {
+      "name": "7-zip",
+      "id": "7zip.7zip",
+      "requiresAdmin": true,
+      "groups": ["productivity"]
+    },
+    {
+      "name": "Adobe Creative Cloud",
+      "id": "Adobe.CreativeCloud",
+      "requiresAdmin": true,
+      "groups": ["productivity"]
+    },
+    {
+      "name": "Blender",
+      "id": "BlenderFoundation.Blender",
+      "requiresAdmin": true,
+      "groups": ["productivity"]
+    },
+    {
+      "name": "Inkscape",
+      "id": "Inkscape.Inkscape",
+      "requiresAdmin": true,
+      "groups": ["productivity"]
+    },
+    {
+      "name": "GIMP",
+      "id": "GIMP.GIMP",
+      "requiresAdmin": true,
+      "groups": ["productivity"]
+    },
+    {
+      "name": "OBS Studio",
+      "id": "OBSProject.OBSStudio",
+      "requiresAdmin": true,
+      "groups": ["gaming", "productivity"]
+    },
+    {
+      "name": "Audacity",
+      "id": "Audacity.Audacity",
+      "requiresAdmin": true,
+      "groups": ["music", "productivity"]
+    },
+    {
+      "name": "VLC Media Player",
+      "id": "VideoLAN.VLC",
+      "requiresAdmin": true,
+      "groups": ["productivity", "video"]
+    },
+    {
+      "name": "Netflix",
+      "id": "9WZDNCRFJ3TJ",
+      "requiresAdmin": false,
+      "groups": ["video"]
+    },
+    {
+      "name": "Hulu",
+      "id": "9WZDNCRFJ3L1",
+      "requiresAdmin": false,
+      "groups": ["video"]
+    },
+    {
+      "name": "Disney+",
+      "id": "9NXQXXLFST89",
+      "requiresAdmin": false,
+      "groups": ["video"]
+    },
+    {
+      "name": "Prime Video",
+      "id": "9P6RC76MSMMJ",
+      "requiresAdmin": false,
+      "groups": ["video"]
+    },
+    {
+      "name": "Git",
+      "id": "Git.Git",
+      "requiresAdmin": true,
+      "groups": ["dev"]
+    },
+    {
+      "name": "Python",
+      "id": "Python.Python.3.11",
+      "requiresAdmin": true,
+      "groups": ["dev-lang"]
+    },
+    {
+      "name": "NodeJS",
+      "id": "Schniz.fnm",
+      "requiresAdmin": true,
+      "groups": ["dev-lang"],
+      "postInstall": [
+        "powershell -command \"fnm env --use-on-cd | Out-String | Invoke-Expression; fnm use --install-if-missing 23\""
+      ]
+    },
+    {
+      "name":  "Rust",
+      "id": "Rustlang.Rust.GNU",
+      "requiresAdmin": true,
+      "groups": ["dev-lang"]
+    },
+    {
+      "name": "Ruby",
+      "id": "RubyInstallerTeam.Ruby.3.2",
+      "requiresAdmin": true,
+      "groups": ["dev-lang"]
+    },
+    {
+      "name":  "JDK 8",
+      "id": "EclipseAdoptium.Temurin.8.JDK",
+      "requiresAdmin": true,
+      "groups": ["dev-lang"]
+    },
+    {
+      "name":  "JDK 17",
+      "id": "EclipseAdoptium.Temurin.17.JDK",
+      "requiresAdmin": true,
+      "groups": ["dev-lang"]
+    },
+    {
+      "name":  "JDK 21",
+      "id": "EclipseAdoptium.Temurin.21.JDK",
+      "requiresAdmin": true,
+      "groups": ["dev-lang"]
+    },
+    {
+      "name": "Go",
+      "id": "GoLang.Go",
+      "requiresAdmin": true,
+      "groups": ["dev-lang"]
+    },
+    {
+      "name": "Visual Studio Code",
+      "id": "Microsoft.VisualStudioCode",
+      "requiresAdmin": false,
+      "groups": ["dev-ide"]
+    },
+    {
+      "name": "Visual Studio 2022 (Community)",
+      "id": "Microsoft.VisualStudio.2022.Community",
+      "requiresAdmin": true,
+      "groups": ["dev-ide"]
+    },
+    {
+      "name": "Visual Studio 2022 (Enterprise)",
+      "id": "Microsoft.VisualStudio.2022.Enterprise",
+      "requiresAdmin": true,
+      "groups": ["dev-ide"]
+    },
+    {
+      "name": "Visual Studio 2022 (Professional)",
+      "id": "Microsoft.VisualStudio.2022.Professional",
+      "requiresAdmin": true,
+      "groups": ["dev-ide"]
+    },
+    {
+      "name": "JetBrains Toolbox",
+      "id": "JetBrains.Toolbox",
+      "requiresAdmin": true,
+      "groups": ["dev-ide-jb"]
+    },
+    {
+      "name": "CLion",
+      "id": "JetBrains.CLion",
+      "requiresAdmin": true,
+      "groups": ["dev-ide-jb"]
+    },
+    {
+      "name": "DataGrip",
+      "id": "JetBrains.DataGrip",
+      "requiresAdmin": true,
+      "groups": ["dev-ide-jb"]
+    },
+    {
+      "name": "DataSpell",
+      "id":  "JetBrains.DataSpell",
+      "requiresAdmin": true,
+      "groups": ["dev-ide-jb"]
+    },
+    {
+      "name": "GoLand",
+      "id":  "JetBrains.GoLand",
+      "requiresAdmin": true,
+      "groups": ["dev-ide-jb"]
+    },
+    {
+      "name": "IntelliJ IDEA Community Edition",
+      "id":  "JetBrains.IntelliJIDEA.Community",
+      "requiresAdmin": true,
+      "groups": ["dev-ide-jb"]
+    },
+    {
+      "name": "IntelliJ IDEA Ultimate Edition",
+      "id":  "JetBrains.IntelliJIDEA.Ultimate",
+      "requiresAdmin": true,
+      "groups": ["dev-ide-jb"]
+    },
+    {
+      "name": "PyCharm Community Edition",
+      "id":  "JetBrains.PyCharm.Community",
+      "requiresAdmin": true,
+      "groups": ["dev-ide-jb"]
+    },
+    {
+      "name": "PyCharm Professional Edition",
+      "id":  "JetBrains.PyCharm.Professional",
+      "requiresAdmin": true,
+      "groups": ["dev-ide-jb"]
+    },
+    {
+      "name": "RubyMine",
+      "id":  "JetBrains.RubyMine",
+      "requiresAdmin": true,
+      "groups": ["dev-ide-jb"]
+    },
+    {
+      "name": "WebStorm",
+      "id":  "JetBrains.WebStorm",
+      "requiresAdmin": true,
+      "groups": ["dev-ide-jb"]
+    },
+    {
+      "name": "PhpStorm",
+      "id":  "JetBrains.PhpStorm",
+      "requiresAdmin": true,
+      "groups": ["dev-ide-jb"]
+    },
+    {
+      "name": "RustRover",
+      "id":  "JetBrains.RustRover",
+      "requiresAdmin": true,
+      "groups": ["dev-ide-jb"]
+    },
+    {
+      "name": "Teams",
+      "id": "Microsoft.Teams",
+      "requiresAdmin": true,
+      "groups": ["comm","productivity"]
+    },
+    {
+      "name": "Thunderbird",
+      "id": "Mozilla.Thunderbird",
+      "requiresAdmin": true,
+      "groups": ["comm", "productivity"]
+    },
+    {
+      "name": "Krita",
+      "id": "KDE.Krita",
+      "requiresAdmin": true,
+      "groups": ["productivity"]
+    }
+  ]
+}
