@@ -23,8 +23,8 @@ const AppDisplay: FC<AppDisplayProps> = ({app, select, deselect, isSelected}) =>
         borderRadius: 4,
         backgroundColor: isSelected(app.id) ? "#707070" : "#202020",
         display: "flex",
-        width: "250px",
-        height: "250px",
+        width: "200px",
+        height: "200px",
         textAlign: "center",
         flexDirection: "column",
         alignItems: "center",
@@ -32,7 +32,7 @@ const AppDisplay: FC<AppDisplayProps> = ({app, select, deselect, isSelected}) =>
         gap: 1
     }} onClick={toggle}>
         <img className="app-icon" src={`/icon/${app.id.toLowerCase().split('.').join('/')}/icon.png`} alt={app.name}/>
-        <Typography variant="h6" component="h6">{app.name}</Typography>
+        <Typography variant="body1" component="span">{app.name}</Typography>
     </Box>
 }
 
