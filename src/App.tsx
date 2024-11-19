@@ -78,7 +78,7 @@ const App: FC = () => {
         }} component="footer">
           This application was developed by <a className="white-link" href="https://github.com/zachbakerdev">@zachbakerdev</a>.
           You can support the project on <a className="white-link" href="https://ko-fi.com/zachbakerdev">ko-fi</a>
-          &nbsp;and add your suggestions on <a className="white-link">GitHub</a> by opening an issue.
+          &nbsp;and add your suggestions on <a className="white-link" href="https://github.com/zachbakerdev/easyinstall">GitHub</a> by opening an issue.
         </Box>
       </Box>
     </Container>
