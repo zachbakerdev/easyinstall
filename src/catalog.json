@@ -423,6 +423,66 @@
       "id": "KDE.Krita",
       "requiresAdmin": true,
       "groups": ["productivity"]
+    },
+    {
+      "name": "iTunes",
+      "id": "9pb2mz1zmb1s",
+      "requiresAdmin": false,
+      "groups": ["music"]
+    },
+    {
+      "name": "qBittorrent",
+      "id": "qBittorrent.qBittorrent",
+      "requiresAdmin": true,
+      "groups": ["productivity"]
+    },
+    {
+      "name": "HandBrake",
+      "id": "HandBrake.HandBrake",
+      "requiresAdmin": true,
+      "groups": ["productivity", "video"]
+    },
+    {
+      "name": "paint.net",
+      "id": "dotPDN.PaintDotNet",
+      "requiresAdmin": true,
+      "groups": ["productivity"]
+    },
+    {
+      "name": "OpenOffice",
+      "id": "Apache.OpenOffice",
+      "requiresAdmin": true,
+      "groups": ["productivity"]
+    },
+    {
+      "name": "Notepad++",
+      "id": "Notepad++.Notepad++",
+      "requiresAdmin": true,
+      "groups": ["productivity"]
+    },
+    {
+      "name": "Dropbox",
+      "id": "Dropbox.Dropbox",
+      "requiresAdmin": true,
+      "groups": ["productivity"]
+    },
+    {
+      "name": "Paramount+",
+      "id": "9WZDNCRFJ0WK",
+      "requiresAdmin": true,
+      "groups": ["video"]
+    },
+    {
+      "name": "Docker Desktop",
+      "id": "Docker.DockerDesktop",
+      "requiresAdmin": true,
+      "groups": ["dev"]
+    },
+    {
+      "name": "Chocolatey",
+      "id": "Chocolatey.Chocolatey",
+      "requiresAdmin": true,
+      "groups": ["dev"]
     }
   ]
 }
