@@ -1,0 +1,15 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/easyinstall
+hooks:
+  BeforeInstall:
+    - location: codedeploy/preinstall.sh
+      timeout: 300
+  AfterInstall:
+    - location: codedeploy/postinstall.sh
+      timeout: 300
+  ApplicationStart:
+    - location: codedeploy/start.sh
+      timeout: 60
