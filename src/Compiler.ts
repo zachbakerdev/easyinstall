@@ -15,14 +15,14 @@ export class Compiler {
             if (app.prerequisites) {
                 app.prerequisites.forEach(prereq => {
                     if (!installed.includes(prereq)) {
-                        adminLines.push(`winget install -h -e --id ${prereq}`);
+                        adminLines.push(`winget install -h -e --id ${prereq} --accept-package-agreements --accept-source-agreements`);
                         installed.push(prereq);
                     }
                 });
             }
             // Download Package
             if (!installed.includes(app.id))
-                adminLines.push(`winget install -h -e --id ${app.id}`);
+                adminLines.push(`winget install -h -e --id ${app.id} --accept-package-agreements --accept-source-agreements`);
             // Run post-install commands
             if (app.postInstall) {
                 app.postInstall.forEach(command => {
@@ -37,14 +37,14 @@ export class Compiler {
             if (app.prerequisites) {
                 app.prerequisites.forEach(prereq => {
                     if (!installed.includes(prereq)) {
-                        noAdminLines.push(`winget install -h -e --id ${prereq}`);
+                        noAdminLines.push(`winget install -h -e --id ${prereq} --accept-package-agreements --accept-source-agreements`);
                         installed.push(prereq);
                     }
                 });
             }
             // Download Package
             if (!installed.includes(app.id))
-                noAdminLines.push(`winget install -h -e --id ${app.id}`);
+                noAdminLines.push(`winget install -h -e --id ${app.id} --accept-package-agreements --accept-source-agreements`);
             // Run post-install commands
             if (app.postInstall) {
                 app.postInstall.forEach(command => {
@@ -58,7 +58,7 @@ export class Compiler {
         lines.push('@echo off');
         lines.push('whoami /groups | findstr /b BUILTIN\\Administrators | findstr /c:"Enabled group" && goto :admin');
         lines.push('echo starting administrator session');
-        lines.push('powershell -Command "Start-Process -FilePath install.bat -Verb RunAs" -Wait');
+        lines.push('powershell -Command "Start-Process -FilePath %0 -Verb RunAs" -Wait');
         lines.push('echo installing no admin packages');
 
         // Inject non-admin lines
