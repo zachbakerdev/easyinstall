@@ -9,16 +9,20 @@
       "id": "gaming"
     },
     {
-      "name": "Music",
-      "id": "music"
-    },
-    {
-      "name": "Movies, Shows, and Video",
-      "id": "video"
-    },
-    {
       "name": "Communication",
       "id": "comm"
+    },
+    {
+      "name": "Streaming Services",
+      "id": "streaming"
+    },
+    {
+      "name": "File Sharing",
+      "id": "file-share"
+    },
+    {
+      "name": "Audio and Visual",
+      "id": "audio-visual"
     },
     {
       "name": "Productivity",
@@ -113,49 +117,49 @@
       "name": "Spotify",
       "id": "Spotify.Spotify",
       "requiresAdmin": true,
-      "groups": ["music"]
+      "groups": ["streaming"]
     },
     {
       "name": "Apple Music",
       "id": "9PFHDD62MXS1",
       "requiresAdmin": true,
-      "groups": ["music"]
+      "groups": ["streaming"]
     },
     {
       "name": "Deezer",
       "id": "Deezer.Deezer",
       "requiresAdmin": true,
-      "groups": ["music"]
+      "groups": ["streaming"]
     },
     {
       "name": "Amazon Music",
       "id": "Amazon.Music",
       "requiresAdmin": true,
-      "groups": ["music"]
+      "groups": ["streaming"]
     },
     {
       "name": "Pandora",
       "id": "9WZDNCRFJ46V",
       "requiresAdmin": true,
-      "groups": ["music"]
+      "groups": ["streaming"]
     },
     {
       "name": "Discord",
       "id": "Discord.Discord",
       "requiresAdmin": true,
-      "groups": ["gaming", "comm"]
+      "groups": ["comm"]
     },
     {
       "name": "Slack",
       "id": "SlackTechnologies.Slack",
       "requiresAdmin": true,
-      "groups": ["comm", "productivity"]
+      "groups": ["comm"]
     },
     {
       "name": "Zoom",
       "id": "Zoom.Zoom",
       "requiresAdmin": true,
-      "groups": ["comm", "productivity"]
+      "groups": ["comm"]
     },
     {
       "name": "Libre Office",
@@ -167,85 +171,85 @@
       "name": "OneDrive",
       "id": "Microsoft.OneDrive",
       "requiresAdmin": true,
-      "groups": ["productivity"]
+      "groups": ["file-share"]
     },
     {
       "name": "Google Drive",
       "id": "Google.GoogleDrive",
       "requiresAdmin": true,
-      "groups": ["productivity"]
+      "groups": ["file-share"]
     },
     {
       "name": "7-zip",
       "id": "7zip.7zip",
       "requiresAdmin": true,
-      "groups": ["productivity"]
+      "groups": ["file-share"]
     },
     {
       "name": "Adobe Creative Cloud",
       "id": "Adobe.CreativeCloud",
       "requiresAdmin": true,
-      "groups": ["productivity"]
+      "groups": ["audio-visual"]
     },
     {
       "name": "Blender",
       "id": "BlenderFoundation.Blender",
       "requiresAdmin": true,
-      "groups": ["productivity"]
+      "groups": ["audio-visual"]
     },
     {
       "name": "Inkscape",
       "id": "Inkscape.Inkscape",
       "requiresAdmin": true,
-      "groups": ["productivity"]
+      "groups": ["audio-visual"]
     },
     {
       "name": "GIMP",
       "id": "GIMP.GIMP",
       "requiresAdmin": true,
-      "groups": ["productivity"]
+      "groups": ["audio-visual"]
     },
     {
       "name": "OBS Studio",
       "id": "OBSProject.OBSStudio",
       "requiresAdmin": true,
-      "groups": ["gaming", "productivity"]
+      "groups": ["productivity"]
     },
     {
       "name": "Audacity",
       "id": "Audacity.Audacity",
       "requiresAdmin": true,
-      "groups": ["music", "productivity"]
+      "groups": ["audio-visual"]
     },
     {
       "name": "VLC Media Player",
       "id": "VideoLAN.VLC",
       "requiresAdmin": true,
-      "groups": ["productivity", "video"]
+      "groups": ["audio-visual"]
     },
     {
       "name": "Netflix",
       "id": "9WZDNCRFJ3TJ",
       "requiresAdmin": false,
-      "groups": ["video"]
+      "groups": ["streaming"]
     },
     {
       "name": "Hulu",
       "id": "9WZDNCRFJ3L1",
       "requiresAdmin": false,
-      "groups": ["video"]
+      "groups": ["streaming"]
     },
     {
       "name": "Disney+",
       "id": "9NXQXXLFST89",
       "requiresAdmin": false,
-      "groups": ["video"]
+      "groups": ["streaming"]
     },
     {
       "name": "Prime Video",
       "id": "9P6RC76MSMMJ",
       "requiresAdmin": false,
-      "groups": ["video"]
+      "groups": ["streaming"]
     },
     {
       "name": "Git",
@@ -410,43 +414,43 @@
       "name": "Teams",
       "id": "Microsoft.Teams",
       "requiresAdmin": true,
-      "groups": ["comm","productivity"]
+      "groups": ["comm"]
     },
     {
       "name": "Thunderbird",
       "id": "Mozilla.Thunderbird",
       "requiresAdmin": true,
-      "groups": ["comm", "productivity"]
+      "groups": ["comm"]
     },
     {
       "name": "Krita",
       "id": "KDE.Krita",
       "requiresAdmin": true,
-      "groups": ["productivity"]
+      "groups": ["audio-visual"]
     },
     {
       "name": "iTunes",
       "id": "9pb2mz1zmb1s",
       "requiresAdmin": false,
-      "groups": ["music"]
+      "groups": ["audio-visual"]
     },
     {
       "name": "qBittorrent",
       "id": "qBittorrent.qBittorrent",
       "requiresAdmin": true,
-      "groups": ["productivity"]
+      "groups": ["file-share"]
     },
     {
       "name": "HandBrake",
       "id": "HandBrake.HandBrake",
       "requiresAdmin": true,
-      "groups": ["productivity", "video"]
+      "groups": ["audio-visual"]
     },
     {
       "name": "paint.net",
       "id": "dotPDN.PaintDotNet",
       "requiresAdmin": true,
-      "groups": ["productivity"]
+      "groups": ["audio-visual"]
     },
     {
       "name": "OpenOffice",
@@ -464,13 +468,13 @@
       "name": "Dropbox",
       "id": "Dropbox.Dropbox",
       "requiresAdmin": true,
-      "groups": ["productivity"]
+      "groups": ["file-share"]
     },
     {
       "name": "Paramount+",
       "id": "9WZDNCRFJ0WK",
       "requiresAdmin": true,
-      "groups": ["video"]
+      "groups": ["streaming"]
     },
     {
       "name": "Docker Desktop",
