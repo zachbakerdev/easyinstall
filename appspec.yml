@@ -10,6 +10,3 @@ hooks:
   AfterInstall:
     - location: deploy/postinstall.sh
       timeout: 300
-  ApplicationStart:
-    - location: deploy/start.sh
-      timeout: 60
